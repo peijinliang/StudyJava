@@ -1,9 +1,9 @@
-package com.java.java;
+package com.java.study;
 
 /**
  * Crete by Marlon
  * Create Date: ${ DATE }
- * Class Describe  java 反射和映射
+ * Class Describe  study 反射和映射
  **/
 public class JavaReflect {
 

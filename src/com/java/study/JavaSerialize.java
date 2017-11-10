@@ -1,4 +1,4 @@
-package com.java.java;
+package com.java.study;
 
 /**
  * Crete by Marlon

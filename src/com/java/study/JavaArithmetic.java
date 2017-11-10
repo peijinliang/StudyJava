@@ -1,9 +1,9 @@
-package com.java.java;
+package com.java.study;
 
 /**
  * Crete by Marlon
  * Create Date: 2017/11/9
- * Class Describe java 算法学习
+ * Class Describe study 算法学习
  **/
 public class JavaArithmetic {
 
