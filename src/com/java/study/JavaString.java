@@ -5,6 +5,7 @@ package com.java.study;
  * Create Date: {DATE}
  * Class Describe
  * String 用法和介绍
+ * 内存分配的使用
  **/
 public class JavaString {
 

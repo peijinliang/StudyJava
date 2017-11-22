@@ -7,6 +7,7 @@ package com.java.study;
  * 访问外部类定义的成员变量：**Outter.this.data
  * 访问内部类定义的成员变量：**this.data
  **/
+
 public class Outter {
 
     //外部类的成员变量
