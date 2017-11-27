@@ -19,6 +19,7 @@ public class StudyFile {
         operationFile(pathname);
     }
 
+
     /**
      * 通过api简单的学习一下File类
      *
@@ -47,6 +48,8 @@ public class StudyFile {
             e.printStackTrace();
         }
     }
+
+
 
     /**
      * 有一些基本的api 记录一下：
@@ -93,11 +96,6 @@ public class StudyFile {
         }
 
     }
-
-
-
-
-
 
 
 }

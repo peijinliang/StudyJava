@@ -20,8 +20,8 @@ import java.io.*;
  * FileWriter(File file, boolean append)
  * FileWriter(FileDescriptor fd)
  * FileWriter(String fileName, boolean append)
- *
  **/
+
 public class CharacterStream {
 
 
