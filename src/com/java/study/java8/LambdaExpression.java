@@ -5,7 +5,13 @@ import com.java.study.bean.User;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 import java.util.function.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * Crete by Marlon
@@ -16,12 +22,12 @@ import java.util.function.*;
  * 2.闭包
  * 3.方法引用
  **/
-
 public class LambdaExpression {
 
 
     public static void main(String args[]) {
-        testdescrStyle();
+//        testdescrStyle();
+        methodReference();
     }
 
     /**
@@ -72,17 +78,48 @@ public class LambdaExpression {
      * 引用特定对象的实例方法
      * 引用特定类型的任意对象的实例方法
      * 引用构造函数
+     * 这个地方依旧不会举一反三
      */
-
     public static void methodReference() {
-
         Supplier<User> c1 = User::new;
         User s1 = c1.get();
 
         Function<String, Integer> stringToInteger = Integer::parseInt;
-
         Function<Integer, User> c2 = i -> new User(i);
         User s3 = c2.apply(100);
+
+        //静态方法引用  Class::staticMethodName
+
+        List<Integer> integers = Arrays.asList(1, 3, 4, 5, 19);
+        Optional<Integer> max = integers.stream().reduce(Math::max);
+
+        max.ifPresent(value -> System.out.println(value));
+
+        //从对象中引用实例方法 ClassInstance::instanceMethodName
+        max.ifPresent(System.out::println);
+
+        //引用特定类型的实例方法 - Class::instanceMethodName
+        List<String> strings = Arrays.asList("how", "to", "do", "in", "java", "dot", "com");
+
+        List<String> sorted = strings.stream().sorted((x, y) -> x.compareTo(y))
+                                      .collect(Collectors.toList());
+
+        System.out.println(sorted);
+
+        List<String> sortedAlt = strings.stream()
+                                         .sorted(String::compareTo)
+                                         .collect(Collectors.toList());
+        System.out.println(sortedAlt);
+
+
+        //引用构造函数 - Class::new
+        List<Integer> integers2 = IntStream.range(1, 100)
+                                          .boxed()
+                                          .collect(Collectors.toCollection(ArrayList::new));
+        integers2.forEach(n -> System.out.print(n + "  "));
+        Optional<Integer> max2 = integers2.stream().reduce(Math::max);
+
+        max2.ifPresent(System.out::println);
 
     }
 

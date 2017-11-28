@@ -8,5 +8,4 @@ package com.java.study;
 public class JavaSerialize {
 
 
-
 }

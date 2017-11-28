@@ -18,7 +18,6 @@ import java.util.stream.Collectors;
 public class Functions {
 
     public static void main(String[] args) {
-
         BiFunction<String, List<Article>, List<Article>> byAuthor =
                 (name, articles) -> articles.stream()
                                             .filter(a -> a.getAuthor().equals(name))
@@ -53,8 +52,6 @@ public class Functions {
                 byTag.andThen(newest);
 
     }
-
-
 
 
 }

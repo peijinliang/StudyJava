@@ -12,12 +12,9 @@ import java.time.temporal.ChronoUnit;
  * java 新的时间和日期API
  * Java8中加入了LocalDateTime, LocalDate, LocalTime, Duration, Period, Instant, DateTimeFormatter等等API
  **/
-
 public class TestTime {
 
-
     public static void main(String[] args) {
-
         //创建日期
         LocalDate date = LocalDate.of(2017, 1, 21); //2017-01-21
         int year = date.getYear(); //2017
