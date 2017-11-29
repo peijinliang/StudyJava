@@ -13,6 +13,7 @@ import java.util.function.Supplier;
  * lambda允许把函数作为一个方法的参数（函数作为参数传递进方法中）
  * 首先要理解函数式编程的原理
  **/
+
 public class FunctionInterface {
 
 
@@ -89,6 +90,7 @@ public class FunctionInterface {
         consumer1.andThen(consumer2).accept("test consumer1");
     }
 
+
     /**
      * Predicate
      * 用于判别一个对象。比如求一个人是否为男性
@@ -98,10 +100,7 @@ public class FunctionInterface {
         System.out.print(predicate.test("hehe"));
     }
 
-
 //        UnaryOperator<T>   接收对象并返回同类型的对象
 //        BinaryOperator<T>	  接收两个同类型的对象，并返回一个原类型对象
-
-
 
 }

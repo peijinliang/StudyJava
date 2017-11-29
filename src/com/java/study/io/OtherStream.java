@@ -8,7 +8,10 @@ import java.io.*;
  * Class Describe
  * <p>
  * 二进制数据流DataOutputStream、DataInputStream
+ * ByteArrayInputStream 和 ByteArrayOutputStream的使用
+ *
  **/
+
 public class OtherStream {
 
     public static void main(String[] args) {
@@ -16,10 +19,14 @@ public class OtherStream {
         String outname = "C:\\Users\\Jin\\Desktop\\zeb5.txt";
         String apkname = "C:\\Users\\Jin\\Desktop\\read.apk";
 
-        readDataOutputStream(inputname);
-        writeDataInputStream(inputname);
-//        operationData(inputname, outname);
-
+//      readDataOutputStream(inputname);
+//      writeDataInputStream(inputname);
+      operationData(inputname, outname);
+        try {
+            startByteArray();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -79,7 +86,38 @@ public class OtherStream {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+
+    /**
+     * ByteArray 输入流和输出流的使用
+     */
+    public static void startByteArray() throws IOException {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream(12);
+        while (outputStream.size() != 12) {
+            try {
+                outputStream.write(System.in.read());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        byte b[] = outputStream.toByteArray();
+        System.out.println("print the content + 打印内容");
+        for (int x = 0; x < b.length; x++) {
+            System.out.print((char) b[x] + "  ");
+        }
+        System.out.println("    ");
+        int c;
+
+        ByteArrayInputStream input = new ByteArrayInputStream(b);
+        System.out.println("Converting characters to Upper case ");
+        for (int y = 0; y < 1; y++) {
+            while ((c = input.read()) != -1) {
+                System.out.println(Character.toUpperCase((char) c));
+            }
+            input.reset();
+        }
+        input.close();
     }
 
 
