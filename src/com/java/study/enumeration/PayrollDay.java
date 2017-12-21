@@ -24,14 +24,11 @@ public enum PayrollDay {
     // 策略枚举
     private enum PayType {
         WEEKDAY { //工作日
-
             double overtimePay(double hours, double payRate) {
-                return hours <= HOURS_PER_SHIFT ? 0 : (hours - HOURS_PER_SHIFT)
-                                                              * payRate / 2;
+                return hours <= HOURS_PER_SHIFT ? 0 : (hours - HOURS_PER_SHIFT) * payRate / 2;
             }
         },
         WEEKEND {  //放假
-
             double overtimePay(double hours, double payRate) {
                 return hours * payRate / 2;
             }

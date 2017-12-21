@@ -9,7 +9,6 @@ import java.io.*;
  * <p>
  * 二进制数据流DataOutputStream、DataInputStream
  * ByteArrayInputStream 和 ByteArrayOutputStream的使用
- *
  **/
 
 public class OtherStream {
@@ -18,16 +17,14 @@ public class OtherStream {
         String inputname = "C:\\Users\\Jin\\Desktop\\zeb4.txt";
         String outname = "C:\\Users\\Jin\\Desktop\\zeb5.txt";
         String apkname = "C:\\Users\\Jin\\Desktop\\read.apk";
-
 //      readDataOutputStream(inputname);
 //      writeDataInputStream(inputname);
-      operationData(inputname, outname);
+        operationData(inputname, outname);
         try {
             startByteArray();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
 

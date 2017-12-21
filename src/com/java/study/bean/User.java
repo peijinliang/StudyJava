@@ -1,15 +1,18 @@
 package com.java.study.bean;
 
+import java.io.Serializable;
+
 /**
  * Crete by Marlon
  * Create Date: 11/27/2017
  * Class Describe
  **/
-public class User {
+public class User implements Serializable {
 
     private String name;
     private String ID;
     private int age;
+    transient private String work;  //  transient  序列化的时候跳过
 
     public User() {
 
@@ -30,6 +33,20 @@ public class User {
         this.age = age;
     }
 
+    public User(String name, String id, int age, String work) {
+        this.name = name;
+        this.ID = id;
+        this.age = age;
+        this.work = work;
+    }
+
+    public String getWork() {
+        return work;
+    }
+
+    public void setWork(String work) {
+        this.work = work;
+    }
 
     public int getAge() {
         return age;

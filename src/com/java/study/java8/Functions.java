@@ -23,12 +23,10 @@ public class Functions {
                                             .filter(a -> a.getAuthor().equals(name))
                                             .collect(Collectors.toList());
 
-
         BiFunction<String, List<Article>, List<Article>> byTag =
                 (tag, articles) -> articles.stream()
                                            .filter(a -> a.getTags().contains(tag))
                                            .collect(Collectors.toList());
-
 
         Function<List<Article>, List<Article>> sortByDate =
                 articles -> articles.stream()

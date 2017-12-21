@@ -17,5 +17,4 @@ public class FruitGenerator implements GenericInterface<String> {
         return fruits[rand.nextInt(3)];
     }
 
-
 }

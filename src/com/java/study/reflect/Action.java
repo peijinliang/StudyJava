@@ -6,9 +6,13 @@ package com.java.study.reflect;
  * Class Describe
  **/
 public interface Action {
+
+
     public void run();
 
+
     public void jump();
+
 
     public void rotate();
 

@@ -1,6 +1,7 @@
 package com.java.study.java8;
 
 import com.java.study.comm.ThrowException;
+
 import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
@@ -16,6 +17,7 @@ public class TestOptional {
 
     //Optional Api解析
     public static void main(String[] args) {
+
         //创建Optional对象
         Optional<String> opt = Optional.empty();
 
@@ -39,7 +41,6 @@ public class TestOptional {
             System.out.println(opt.orElseGet(supplier1));
         }
 
-
         if (!opt.isPresent()) {
             try {
                 Supplier<Exception> supplier2 = () -> {
@@ -59,7 +60,6 @@ public class TestOptional {
         Predicate<String> predicate = (x) -> x.length() > 0;
         opt2.filter(predicate);
     }
-
 
 
 }

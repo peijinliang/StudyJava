@@ -7,9 +7,10 @@ package com.java.study.reflect;
  **/
 public class Civilian extends Person {
 
-
     public Civilian(String name, int age, String head) {
         super(name, age, head);
     }
+
+    
 
 }

@@ -16,12 +16,14 @@ public class EnumMethodDemo {
         for (Color c : Color.values()) {
             System.out.println(c + " ordinal: " + c.ordinal());
         }
+
         System.out.println("=========== Print all Size ===========");
         for (Size s : Size.values()) {
             System.out.println(s + " ordinal: " + s.ordinal());
         }
 
         Color green = Color.GREEN;
+
         System.out.println("green name(): " + green.name());
         System.out.println("green getDeclaringClass(): " + green.getDeclaringClass());
         System.out.println("green hashCode(): " + green.hashCode());
@@ -30,6 +32,7 @@ public class EnumMethodDemo {
         System.out.println("green equals Size.MIDDLE: " + green.equals(Size.MIDDLE));
         System.out.println("green equals 1: " + green.equals(1));
         System.out.format("green == Color.BLUE: %b\n", green == Color.BLUE);
+
     }
 
 
