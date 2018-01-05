@@ -11,7 +11,6 @@ public class Article {
     private String tags;
     private Integer published;
 
-
     public Integer published() {
         return published;
     }

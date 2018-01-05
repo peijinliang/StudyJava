@@ -7,8 +7,12 @@ package com.java.study.gather;
  **/
 public class JavaQueue {
 
+
     public static void main(String[] args) {
 
+
     }
+
+
 
 }

@@ -8,6 +8,7 @@ package com.java.study;
  * Java语言本身不能对操作系统底层进行访问和操作，但是可以通过JNI接口调用其他语言来实现对底层的访问。
  * JNI java native interface
  **/
+
 public class JavaNative {
 
     public native void hello();

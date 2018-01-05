@@ -17,6 +17,7 @@ public class FileStream {
         mainfileIoTest();
     }
 
+
     //文件输入流的两种输入方式
     public static void studyFileInputStream() {
         try {

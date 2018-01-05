@@ -17,7 +17,6 @@ public class TestOptional {
 
     //Optional Api解析
     public static void main(String[] args) {
-
         //创建Optional对象
         Optional<String> opt = Optional.empty();
 
@@ -35,7 +34,6 @@ public class TestOptional {
         }
 
         Supplier<String> supplier1 = () -> "Test supplier";
-
         if (!opt.isPresent()) {
             //如果Optional是空，则调用给定的提供者来产生一个值
             System.out.println(opt.orElseGet(supplier1));

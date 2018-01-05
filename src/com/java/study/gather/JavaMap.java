@@ -1,7 +1,5 @@
 package com.java.study.gather;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Crete by Marlon
@@ -11,11 +9,9 @@ import java.util.List;
 public class JavaMap {
 
 
-
     public static void main(String[] args) {
 
 
     }
-
 
 }
