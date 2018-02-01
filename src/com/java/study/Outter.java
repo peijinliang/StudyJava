@@ -21,7 +21,6 @@ public class Outter {
             System.out.println(Outter.this.data);
             System.out.println(this.data);
         }
-
     }
 
     public void outterPrint() {
