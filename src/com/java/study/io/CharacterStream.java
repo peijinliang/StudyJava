@@ -7,12 +7,14 @@ import java.io.*;
  * Create Date: 2017/11/9
  * Class Describe
  * <p>
+ * <p>
  * JAVA 字符流进行操作
  * * FileReader类从InputStreamReader类继承而来
  * 创建FileReader方法
  * FileReader(File file)
  * FileReader(FileDescriptor fd)
  * FileReader(String fileName)
+ * <p>
  * <p>
  * FileWriter
  * 该类按字符向流中写入数据
@@ -24,8 +26,8 @@ import java.io.*;
 
 public class CharacterStream {
 
-
     public static void main(String[] args) {
+
         String filename = "C:\\Users\\Jin\\Desktop\\zeb4.txt";
         String apkname = "C:\\Users\\Jin\\Desktop\\read.apk";
         startBufferWriter(filename);
@@ -33,7 +35,6 @@ public class CharacterStream {
 
         startStringWriter();
         startStringReader();
-
 
         startFileWriter(filename);
         startFileReader(filename);
@@ -52,12 +53,10 @@ public class CharacterStream {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public static void startStringWriter() {
         try {
-
             StringWriter stringWriter = new StringWriter();
             stringWriter.write("我是 一个");
             stringWriter.append("Java 大神级别的人物");
@@ -107,7 +106,6 @@ public class CharacterStream {
     }
 
 
-
     /**
      * @param fileName
      */
@@ -123,7 +121,6 @@ public class CharacterStream {
             e.printStackTrace();
         }
     }
-
 
 
     /**
@@ -143,7 +140,6 @@ public class CharacterStream {
             e.printStackTrace();
         }
     }
-
 
     public static void studyFileReader() {
         try {
@@ -168,7 +164,6 @@ public class CharacterStream {
             e.printStackTrace();
         }
     }
-
 
 
 }

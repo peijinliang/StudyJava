@@ -13,9 +13,7 @@ import java.util.function.Supplier;
  * lambda允许把函数作为一个方法的参数（函数作为参数传递进方法中）
  * 首先要理解函数式编程的原理
  **/
-
 public class FunctionInterface {
-
 
     public static void main(String[] args) {
         testfunction();

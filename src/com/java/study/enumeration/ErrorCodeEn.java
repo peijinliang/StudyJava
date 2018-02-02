@@ -5,12 +5,12 @@ package com.java.study.enumeration;
  * Create Date: 2017/11/10
  * Class Describe
  **/
+
 public enum ErrorCodeEn implements INumberEnum {
 
     OK(0, "³É¹¦"),
     ERROR_A(100, "´íÎóA"),
     ERROR_B(200, "´íÎóB");
-
 
     ErrorCodeEn(int number, String description) {
         this.code = number;

@@ -5,12 +5,12 @@ package com.java.study.generic;
  * Create Date: 2017/11/10
  * Class Describe
  **/
+
 public class User {
 
     private String name;
     private String id;
     private String head;
-
 
     public String getName() {
         return name;

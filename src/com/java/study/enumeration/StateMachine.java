@@ -11,9 +11,6 @@ public class StateMachine {
     }
 
 
-
-
-
     //枚举类型的状态机 可读性比较好
     private String getTrafficInstruct(Signal signal) {
         String instruct = "信号灯故障";
@@ -32,7 +29,6 @@ public class StateMachine {
         }
         return instruct;
     }
-
 
 
 }

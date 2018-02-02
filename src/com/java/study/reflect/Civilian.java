@@ -11,6 +11,8 @@ public class Civilian extends Person {
         super(name, age, head);
     }
 
-    
+
+
+
 
 }

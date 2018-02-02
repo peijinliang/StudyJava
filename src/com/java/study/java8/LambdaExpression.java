@@ -24,7 +24,6 @@ import java.util.stream.IntStream;
  **/
 public class LambdaExpression {
 
-
     public static void main(String args[]) {
 //      testdescrStyle();
         methodReference();
@@ -47,7 +46,6 @@ public class LambdaExpression {
         BinaryOperator<Long> add = (x, y) -> x + y;
         BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
     }
-
 
     /**
      * 闭包
@@ -103,8 +101,7 @@ public class LambdaExpression {
         //引用特定类型的实例方法 - Class::instanceMethodName
         List<String> strings = Arrays.asList("how", "to", "do", "in", "java", "dot", "com");
 
-        List<String> sorted = strings.stream().sorted((x, y) -> x.compareTo(y))
-                                      .collect(Collectors.toList());
+        List<String> sorted = strings.stream().sorted((x, y) -> x.compareTo(y)).collect(Collectors.toList());
 
         System.out.println(sorted);
 

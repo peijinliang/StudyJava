@@ -36,7 +36,6 @@ public class Functions {
         Function<List<Article>, Optional<Article>> first =
                 a -> a.stream().findFirst();
 
-
         Function<List<Article>, Optional<Article>> newest =
                 first.compose(sortByDate);
 

@@ -10,17 +10,23 @@ import java.util.Map;
  * Create Date: 2017/11/10
  * Class Describe
  **/
+
 public class EnumSetAndMap {
 
+
     public static void main(String[] args) {
+
         System.out.println("时薪100的人在周五工作8小时的收入：" + PayrollDay.FRIDAY.pay(8.0, 100));
         System.out.println("时薪100的人在周六工作8小时的收入：" + PayrollDay.SATURDAY.pay(8.0, 100));
+
         // EnumSet的使用
         System.out.println("EnumSet展示");
         EnumSet<ErrorCodeEn> errSet = EnumSet.allOf(ErrorCodeEn.class);
+
         for (ErrorCodeEn e : errSet) {
             System.out.println(e.name() + " : " + e.ordinal());
         }
+
         // EnumMap的使用
         System.out.println("EnumMap展示");
         EnumMap<StateMachine.Signal, String> errMap = new EnumMap(StateMachine.Signal.class);
@@ -31,6 +37,8 @@ public class EnumSetAndMap {
             Map.Entry<StateMachine.Signal, String> entry = iter.next();
             System.out.println(entry.getKey().name() + " : " + entry.getValue());
         }
+
     }
+
 
 }

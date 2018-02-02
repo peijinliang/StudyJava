@@ -7,8 +7,8 @@ package com.java.study.multithreading;
  **/
 public class JavaLock {
 
-
     public static void main(String[] args) {
+
 
 
     }

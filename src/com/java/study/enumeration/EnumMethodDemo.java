@@ -30,7 +30,7 @@ public class EnumMethodDemo {
         System.out.println("green equals Color.GREEN: " + green.equals(Color.GREEN));
         System.out.println("green equals Size.MIDDLE: " + green.equals(Size.MIDDLE));
         System.out.println("green equals 1: " + green.equals(1));
-        System.out.format("green == Color.BLUE: %b\n", green == Color.BLUE);
+        System.out.format(" green == Color.BLUE: %b\n", green == Color.BLUE);
     }
 
 
