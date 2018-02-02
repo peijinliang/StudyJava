@@ -39,6 +39,4 @@ public class GenericMore<T, K> extends Generic<T> {
             System.out.println("∑∫–Õ≤‚ ‘£∫t is " + t);
         }
     }
-
-
 }

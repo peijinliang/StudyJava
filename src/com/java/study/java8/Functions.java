@@ -4,8 +4,7 @@ import com.java.study.bean.Article;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+import java.util.function.*;
 import java.util.stream.Collectors;
 
 /**
@@ -18,6 +17,28 @@ import java.util.stream.Collectors;
 public class Functions {
 
     public static void main(String[] args) {
+
+        //参数为Integer  返回值为String
+        Function<Integer, String> fun = String::valueOf;
+        System.out.println(fun.apply(1000));
+        //扩展的Function 接口
+        IntFunction<String> intFunction = String::valueOf;
+        System.out.println(intFunction.apply(93939393));
+
+        //肉包子打狗类型接口
+        Consumer<String> consumer = System.out::println;
+        consumer.accept("我日你妹");
+
+        //供给型接口
+        Supplier<String> supplier = "Hello"::toUpperCase;
+        System.out.println(supplier.get());
+
+        //断言型函数式接口
+        Predicate<String> predicate = "##Hello"::startsWith;
+        System.out.println(predicate.test("#"));
+
+
+
         BiFunction<String, List<Article>, List<Article>> byAuthor =
                 (name, articles) -> articles.stream()
                                             .filter(a -> a.getAuthor().equals(name))
@@ -49,6 +70,7 @@ public class Functions {
                 byTag.andThen(newest);
 
     }
+
 
 
 }
