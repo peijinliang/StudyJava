@@ -5,6 +5,7 @@ package com.java.study.comm;
  * Create Date: 11/28/2017
  * Class Describe
  **/
+
 public class ThrowException extends RuntimeException {
 
     private String msg;
@@ -21,5 +22,6 @@ public class ThrowException extends RuntimeException {
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
 
 }

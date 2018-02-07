@@ -9,6 +9,7 @@ import java.io.*;
  * Class Describe
  * File 文件流 进行学习
  **/
+
 public class FileStream {
 
     //设计一个小的案例  创建一个输出流，输出到文件 helloworld.txt里边去,然后在从里边读入打印
