@@ -7,8 +7,15 @@ import java.util.List;
  * Crete by Marlon
  * Create Date: 11/17/2017
  * Class Describe
+ * 克隆 必须实现接口Cloneable
  **/
-public class Person implements Action {
+
+public class Person implements Action, Cloneable {
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();  //克隆
+    }
 
     private String name;
     private int age;
@@ -18,6 +25,11 @@ public class Person implements Action {
 
     public Person(String name) {
         this.name = name;
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public Person(String name, int age, String head) {

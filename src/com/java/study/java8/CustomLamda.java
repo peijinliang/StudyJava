@@ -12,7 +12,6 @@ import java.util.function.Consumer;
 @FunctionalInterface
 public interface CustomLamda<T> {
 
-
     T testCustomFunction(Consumer<T> cunsumer);
 
 }

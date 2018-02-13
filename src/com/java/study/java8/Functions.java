@@ -1,6 +1,5 @@
 package com.java.study.java8;
 
-
 import com.java.study.bean.Article;
 
 import java.util.List;
@@ -39,6 +38,7 @@ public class Functions {
         System.out.println(predicate.test("#"));
 
 
+
         BiFunction<String, List<Article>, List<Article>> byAuthor =
                 (name, articles) -> articles.stream()
                                             .filter(a -> a.getAuthor().equals(name))
@@ -70,6 +70,7 @@ public class Functions {
                 byTag.andThen(newest);
 
     }
+
 
 
 }

@@ -6,6 +6,7 @@ import java.util.concurrent.Callable;
  * 时代变化就是 多线程开发包
  * Callable 接口实现多线程
  */
+
 public class CallableThread implements Callable<String> {
 
     @Override
@@ -15,6 +16,5 @@ public class CallableThread implements Callable<String> {
         }
         return "CallableThread  接口的返回值";
     }
-
 
 }

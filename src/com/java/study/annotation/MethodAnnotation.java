@@ -19,5 +19,5 @@ public @interface MethodAnnotation {
     public String name();
 
     public String value();
-
+    
 }

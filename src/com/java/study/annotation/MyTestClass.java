@@ -9,5 +9,4 @@ package com.java.study.annotation;
 @ClassAnnotation(name = "someTest", value = "Hello world")
 public class MyTestClass {
 
-
 }

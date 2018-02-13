@@ -1,6 +1,5 @@
 package com.java.study.multithreading;
 
-
 public class Data {
 
     private String title;
@@ -39,6 +38,5 @@ public class Data {
     public void setNote(String note) {
         this.note = note;
     }
-
 
 }

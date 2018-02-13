@@ -1,4 +1,4 @@
-package com.java.study;
+package com.java.study.keyclass;
 
 import com.java.study.bean.Person;
 

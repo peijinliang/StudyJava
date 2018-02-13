@@ -64,6 +64,7 @@ public class OtherStream {
 
     /**
      * 操作数据流
+     *
      */
     public static void operationData(String inputname, String outname) {
         DataInputStream d = null;
@@ -89,6 +90,7 @@ public class OtherStream {
 
     /**
      * ByteArray 输入流和输出流的使用
+     *
      */
     public static void startByteArray() throws IOException {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream(12);
@@ -117,7 +119,6 @@ public class OtherStream {
         }
         input.close();
     }
-
 
 
 }
