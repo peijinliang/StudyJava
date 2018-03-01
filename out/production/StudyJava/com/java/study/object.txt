@@ -26,14 +26,18 @@ class  类名称{
     //通过对象进行调用
 }
 
+
 举例：
-class Person{   //属性和方法并不限个数  行数不要超过500行
+class Person{
+
+      //属性和方法并不限个数  行数不要超过500行
       String name;
       String age;
 
       public void info(){
        System.out.println("name:"+name+"age:"+age)
       }
+
 }
 
 声明并实例化对象：类名称 对象名称 = new 类名称();
@@ -60,6 +64,7 @@ GC(垃圾回收机制)会降低程序的性能。在开发过程中降低垃圾内存空间的产生。
 private 实现封装处理
 1、private实现封装的最大特征在于：只允许本类访问，外部不可直接访问。
 2、这仅仅是封装的第一步。
+
 
 第七课
 构造方法的作用（为类中的属性进行初始化）：

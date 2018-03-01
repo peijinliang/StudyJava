@@ -4,7 +4,7 @@ public class DataConsumer implements Runnable {
 
     private Data data;
 
-     DataConsumer(Data data) {
+    DataConsumer(Data data) {
         this.data = data;
     }
 

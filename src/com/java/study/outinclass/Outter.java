@@ -1,4 +1,5 @@
-package com.java.study;
+package com.java.study.outinclass;
+
 
 /**
  * Crete by Marlon

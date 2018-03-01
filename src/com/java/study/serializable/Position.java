@@ -9,8 +9,11 @@ import java.io.ObjectOutput;
  * Crete by Marlon
  * Create Date: 12/6/2017
  * Class Describe
+ *
+ * Externalizable  接口能需要手动 进行序列化
+ *
  **/
-public class Position  implements Externalizable {
+public class Position implements Externalizable {
 
     private String name;
     private String id;
@@ -30,7 +33,7 @@ public class Position  implements Externalizable {
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-        role  = in.readInt();
+        role = in.readInt();
         name = (String) in.readObject();
         id = (String) in.readObject();
     }

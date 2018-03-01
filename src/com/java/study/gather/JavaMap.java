@@ -8,16 +8,13 @@ import java.util.HashMap;
  * Create Date: 2017/11/9
  * Class Describe javaMap‘≠¿Ì
  **/
-
 public class JavaMap {
 
 
     public static void main(String[] args) {
+
         HashMap<String, String> hashMap = new HashMap<>();
 
-
-
     }
-
 
 }

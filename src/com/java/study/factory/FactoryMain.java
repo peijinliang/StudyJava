@@ -17,9 +17,9 @@ public class FactoryMain {
         Fruits apple = Factory.getInstances(Apple.class.getName());
         apple.eat();
 
+
         Message message = Factory.getInstances(MessageImpl.class.getName());
         message.print();
-
     }
 
 

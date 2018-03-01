@@ -9,7 +9,7 @@ package com.java.study.factory;
  * 需要通过反射机制来实现 。
  * <p>
  * 通过反射模式 改进的 工厂设计模式 可以动态的加载类
- * 解决耦合的问题 。
+ * 解决耦合的问题
  **/
 
 public class FruitsFactory {
@@ -20,6 +20,7 @@ public class FruitsFactory {
     }
 
     public static Fruits getInstances(String className) {
+
         //第一种写法
 //        if (className.equals("apple")) {
 //            return new Apple();
@@ -40,12 +41,8 @@ public class FruitsFactory {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-
         return fruits;
     }
-
-
-
 
 
 }

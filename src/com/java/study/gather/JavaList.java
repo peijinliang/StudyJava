@@ -3,7 +3,6 @@ package com.java.study.gather;
 import com.java.study.bean.User;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.function.UnaryOperator;
@@ -23,16 +22,13 @@ import java.util.function.UnaryOperator;
 
 public class JavaList {
 
-
     public static void main(String[] args) {
         Collection<User> user = new ArrayList<>();
         List<User> list = new ArrayList<>();
 
-
         UnaryOperator<User> unaryOperator = UnaryOperator.identity();
 //      list.replaceAll(unaryOperator);   //根据operator指定的计算规则重新设置List集合的所有元素
 //      list.sort(Comparator c);根据Comparator参数对List集合的元素排序
-
 
     }
 

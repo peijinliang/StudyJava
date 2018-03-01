@@ -7,12 +7,9 @@ package com.java.study.reflect;
  **/
 public interface Action {
 
-
     public void run();
 
-
     public void jump();
-
 
     public void rotate();
 

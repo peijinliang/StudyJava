@@ -19,14 +19,17 @@ public class T_Runtime {
 
     public static void main(String[] args) {
 //        Runtime runtime = new Runtime();  构造方法被私有化
+
         //单例设计模式
         Runtime runtime = Runtime.getRuntime();
+
 
         System.out.println("1.MAX = " + byteTom(runtime.maxMemory()));
         System.out.println("1.TOTAL = " + byteTom(runtime.totalMemory()));
         System.out.println("1.FREE = " + byteTom(runtime.freeMemory()));
         System.out.println("运行程序：------------------------");
         String str = "";
+
         for (int i = 0; i < 99999; i++) {
             str += i;
         }
@@ -40,6 +43,7 @@ public class T_Runtime {
         System.out.println("3.MAX = " + byteTom(runtime.maxMemory()));
         System.out.println("3.TOTAL = " + byteTom(runtime.totalMemory()));
         System.out.println("3.FREE = " + byteTom(runtime.freeMemory()));
+
 
     }
 

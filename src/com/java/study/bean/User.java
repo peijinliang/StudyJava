@@ -7,12 +7,14 @@ import java.io.Serializable;
  * Create Date: 11/27/2017
  * Class Describe
  **/
+
 public class User implements Serializable {
 
     private String name;
     private String ID;
     private int age;
-    transient private String work;  //  transient  序列化的时候跳过
+
+     private transient String work;  //  transient  序列化的时候跳过
 
     public User() {
 
