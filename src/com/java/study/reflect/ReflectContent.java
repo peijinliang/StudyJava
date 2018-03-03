@@ -8,12 +8,14 @@ import java.util.List;
  * Create Date: ${ DATE }
  * Class Describe  study 反射和映射
  **/
-public class JavaReflect {
+
+public class ReflectContent {
 
     public static void main(String[] args) {
-        try {
-            Class className = Class.forName("com.java.study.reflect.Person");
 
+        try {
+
+            Class className = Class.forName("com.java.study.reflect.Person");
             //即获取类名 又获取包名
             System.out.println("Name:" + className.getName());
             //仅仅获取类名 不获取包名
@@ -111,6 +113,7 @@ public class JavaReflect {
         }
 
     }
+
 
 
 }

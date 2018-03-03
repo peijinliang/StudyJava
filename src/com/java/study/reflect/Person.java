@@ -17,11 +17,17 @@ public class Person implements Action, Cloneable {
         return super.clone();  //¿ËÂ¡
     }
 
+    public Person(){
+
+    }
+
     private String name;
     private int age;
     private String head;
     protected List<String> stringList = new ArrayList<>();
     private String privateString = null;
+
+    public String CardId;
 
     public Person(String name) {
         this.name = name;
@@ -72,6 +78,14 @@ public class Person implements Action, Cloneable {
                        '}';
     }
 
+
+    public String getCardId() {
+        return CardId;
+    }
+
+    public void setCardId(String cardId) {
+        CardId = cardId;
+    }
 
     public Person(String name, String privateString) {
         this.name = name;
