@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationTargetException;
 public class EmpAction {
 
 
-    private Emp emp = new Emp();
+    private Emp emp ;
 
-    public void setEmpValue(String value) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, NoSuchFieldException {
+    public void setEmpValue(String value) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, NoSuchFieldException, InstantiationException {
         //定位要操作属性的类型
             BeanOperation.setBeanValue(this, value);
     }
@@ -22,6 +22,7 @@ public class EmpAction {
     }
 
 
-
-
+    public void setEmp(Emp emp) {
+        this.emp = emp;
+    }
 }

@@ -13,7 +13,7 @@ public class StudentAction {
 
     private Student student = new Student();
 
-    public void setStudentValue(String value) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, NoSuchFieldException {
+    public void setStudentValue(String value) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, NoSuchFieldException, InstantiationException {
         //定位要操作属性的类型
         BeanOperation.setBeanValue(this, value);
     }
