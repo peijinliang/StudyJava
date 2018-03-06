@@ -12,15 +12,12 @@ package com.java.study.reflect.loader;
 
 public class ClassLoaderTest {
 
-
     public static void main(String[] args) {
         Class<?> cls = Member.class;
         System.out.println(cls.getClassLoader());   //两个雷加载器   sun.misc.Launcher$AppClassLoader@18b4aac2  应用程序加载器
         System.out.println(cls.getClassLoader().getParent());  // sun.misc.Launcher$ExtClassLoader@4554617c  扩展类加载类
         System.out.println(cls.getClassLoader().getParent().getParent());
     }
-
-
 
 
 }

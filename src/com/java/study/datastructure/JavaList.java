@@ -25,9 +25,7 @@ import java.util.*;
 
 public class JavaList {
 
-
     public static void main(String[] args) {
-
 //        list.contains();
 //        list.iterator();
 
