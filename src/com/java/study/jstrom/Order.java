@@ -5,6 +5,7 @@ package com.java.study.jstrom;
  * Create Date: 2018/3/6
  * Class Describe
  **/
+
 public class Order {
 
     private String title;
@@ -17,7 +18,6 @@ public class Order {
         this.price = price;
         this.amount = amout;
     }
-
 
     public String getTitle() {
         return title;

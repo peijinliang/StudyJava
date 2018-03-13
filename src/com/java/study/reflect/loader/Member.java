@@ -6,4 +6,6 @@ package com.java.study.reflect.loader;
  * Class Describe
  **/
 public class Member {
+
+
 }

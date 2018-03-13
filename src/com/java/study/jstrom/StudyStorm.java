@@ -63,7 +63,6 @@ public class StudyStorm {
         orders.add(new Order("Java开发", 50.00, 30));
         orders.add(new Order("铅笔", 299.00, 30));
         orders.add(new Order("港币", 50.00, 3000));
-
         //大数据统计分析
 
         //算总价

@@ -10,8 +10,8 @@ import java.util.Queue;
  * Queue : 先进先出
  * 高并发：实际上有一个缓冲
  **/
-
 public class JavaQueue {
+
 
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
