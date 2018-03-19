@@ -14,8 +14,9 @@ import java.util.Base64;
 
 public class JavaBase64 {
 
-
     public static void main(String[] args) {
+        System.getProperties().list(System.out);
+
         String msg = "www.360zebra.com";
         String eMsg = Base64.getEncoder().encodeToString(msg.getBytes());
 
