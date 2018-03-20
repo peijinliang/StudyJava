@@ -5,6 +5,7 @@ package com.java.study.datastructure.map;
  * Create Date: 2018/3/13
  * Class Describe
  **/
+
 public class SPerson implements Comparable<SPerson> {
 
     private String name;

@@ -1,4 +1,4 @@
-package com.java.study.multithreading;
+package com.java.study.concurrent;
 
 public class DataConsumer implements Runnable {
 

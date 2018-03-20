@@ -29,7 +29,6 @@ public class JavaList {
         UnaryOperator<User> unaryOperator = UnaryOperator.identity();
 //      list.replaceAll(unaryOperator);   //根据operator指定的计算规则重新设置List集合的所有元素
 //      list.sort(Comparator c);根据Comparator参数对List集合的元素排序
-
     }
 
 

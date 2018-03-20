@@ -26,6 +26,7 @@ import java.util.stream.Stream;
 public class StudyStorm {
 
     public static void main(String[] args) {
+
         List<String> all = new ArrayList<>();
         all.add("1、java");
         all.add("2、php");
@@ -37,6 +38,7 @@ public class StudyStorm {
         all.add("8、ajax");
         all.add("9、nginx");
         all.add("10、redis");
+
 //        all.forEach(System.out::println);
 //        all.forEach((x) -> {
 //            System.out.println(x);
@@ -45,6 +47,7 @@ public class StudyStorm {
 //        if (strings.hasNext()) {
 //            System.out.println(strings.next());
 //        }
+
         //用一些简单的代码 完成一些比较复杂的业务逻辑操作
         Stream<String> stringStream = all.stream();
 //      System.out.println(stringStream.count());
@@ -76,7 +79,6 @@ public class StudyStorm {
         System.out.println("Max:" + toPrice.getMax());
         System.out.println("Min:" + toPrice.getMin());
         System.out.println("Sum:" + toPrice.getSum());
-
         //大数据操作 都在文件
 
     }

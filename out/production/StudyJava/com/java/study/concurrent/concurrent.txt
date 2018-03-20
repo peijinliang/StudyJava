@@ -1,0 +1,32 @@
+
+1、线程本身就是一个进程进行资源分配和CPU分配的过程
+2、Thread 中的 start0()方法  对JVM虚拟机进行资源的分配
+3、Thread 和  Runnable  实际上即使 都是在run（）方法写具体的业务逻辑
+4、 线程有就绪状态   阻塞状态  运行状态
+
+java.util.concurrent;  这个包是实际中进行高并发编程的jar包。
+Runnable 接口和  Callable<T>  接口最大的区别就是一个有返回值，一个没有返回值。
+
+
+线程的同步和死锁
+轮番抢占资源带来的问题
+
+java.util.concurrent 是java中提供并发编程的包：
+
+主要内容：
+Executor(执行者)：具体Runnable的执行者
+ExecutorService(执行者服务)：一个线程池的管理者
+Semaphore(信号)：一个计数信号量
+BlockingQueue： 阻塞队列
+ReentrantLock：一个可重入的互斥锁定Lock,功能类似于synchroinized 但是要强大的多
+Future ：Future 表示异步计算的结果。
+ScheduledExecutorService ：一个 ExecutorService，可安排在给定的延迟后运行或定期执行的命令。
+
+Executors：主要方法
+newFixedThreadPool（固定大小线程池）
+newCachedThreadPool（无界线程池，可以进行自动线程回收）
+newSingleThreadExecutor（单个后台线程）
+
+
+
+

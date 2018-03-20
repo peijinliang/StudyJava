@@ -11,8 +11,8 @@ import java.nio.channels.FileChannel;
  * Create Date: 2018/3/19
  * Class Describe
  **/
-public class NioChannel {
 
+public class NioChannel {
 
     public static void main(String[] args) throws IOException {
         readFile();
@@ -32,7 +32,6 @@ public class NioChannel {
 
 
     public static void writeFile() throws IOException {
-
         FileOutputStream fout = new FileOutputStream("writesomebytes.txt");
         FileChannel fc = fout.getChannel();
 
@@ -43,12 +42,10 @@ public class NioChannel {
         for (int i = 0; i < message.length; ++i) {
             buffer.put(message[i]);
         }
-        buffer.flip();
 
+        buffer.flip();
         fc.write(buffer);
     }
-
-
 
 
 }

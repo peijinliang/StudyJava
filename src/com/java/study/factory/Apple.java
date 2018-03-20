@@ -9,9 +9,7 @@ public class Apple implements Fruits {
 
     @Override
     public void eat() {
-
         System.out.println(" 来 思密达 吃个苹果");
-
     }
 
 }

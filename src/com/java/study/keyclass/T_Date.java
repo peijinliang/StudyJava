@@ -1,7 +1,5 @@
 package com.java.study.keyclass;
 
-import com.java.study.multithreading.Data;
-
 import java.util.Date;
 
 /**

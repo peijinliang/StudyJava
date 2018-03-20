@@ -4,9 +4,14 @@ import java.io.*;
 import java.nio.*;
 import java.nio.channels.*;
 
-public class SliceBuffer {
-    static public void main(String args[]) throws Exception {
 
+/**
+ * 缓冲区分片
+ * 片段和缓冲区共享一个底层数据组
+ */
+public class SliceBuffer {
+
+    public static void main(String args[]) throws Exception {
         ByteBuffer buffer = ByteBuffer.allocate(10);
 
         for (int i = 0; i < buffer.capacity(); ++i) {
@@ -30,6 +35,7 @@ public class SliceBuffer {
         while (buffer.remaining() > 0) {
             System.out.println(buffer.get());
         }
+
     }
 
 

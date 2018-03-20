@@ -25,14 +25,19 @@ Buffer抽象类 (缓冲类)
 
 
 Channel (通道)
-
 1）是(Buffer)缓冲器和I/O 服务之间的通道，
 2）具有双向性，既可以读入也可以写出，可以更高效的传递数据。
 
 
 Selector（选择器）和SelectionKey（选择键）
-
 1)Buffer 是数据的容器对象；各类Channel 实现在各类Buffer 与各类I/O 服务间传输数据。
 Selector 是实现并发型非阻塞I/O 的核心.
-
 2)
+
+
+
+
+
+
+
+

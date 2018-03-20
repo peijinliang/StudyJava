@@ -16,6 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 16年之前 传统公司
  * 16年以后 互联网公司
  **/
+
 public class SMap {
 
     public static void main(String[] args) {

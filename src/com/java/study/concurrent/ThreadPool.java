@@ -1,4 +1,4 @@
-package com.java.study.multithreading;
+package com.java.study.concurrent;
 
 import java.util.concurrent.*;
 

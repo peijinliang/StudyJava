@@ -5,12 +5,14 @@ package com.java.study.arithmetic;
  * 前提：二分查找进行排序
  * 逻辑思维训练
  */
+
 public class BinarySearch {
+
 
     public static void main(String[] args) {
         int[] data = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
         int search = 8;
-//        index(data, search);
+//      index(data, search);
         int x = binarySearch(data, 0, data.length - 1, search);
         System.out.println(x);
     }
@@ -43,5 +45,6 @@ public class BinarySearch {
         }
         return -1;
     }
+
 
 }

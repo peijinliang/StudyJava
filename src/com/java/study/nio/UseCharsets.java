@@ -18,8 +18,7 @@ public class UseCharsets
     FileChannel inc = inf.getChannel();
     FileChannel outc = outf.getChannel();
 
-    MappedByteBuffer inputData =
-      inc.map( FileChannel.MapMode.READ_ONLY, 0, inputLength );
+    MappedByteBuffer inputData = inc.map( FileChannel.MapMode.READ_ONLY, 0, inputLength );
 
     Charset latin1 = Charset.forName( "ISO-8859-1" );
     CharsetDecoder decoder = latin1.newDecoder();
@@ -28,7 +27,6 @@ public class UseCharsets
     CharBuffer cb = decoder.decode( inputData );
 
     // Process char data here
-
     ByteBuffer outputData = encoder.encode( cb );
 
     outc.write( outputData );
