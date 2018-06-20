@@ -19,7 +19,7 @@ public class EnumMethodDemo {
 
         System.out.println("=========== Print all Size ===========");
         for (Size s : Size.values()) {
-            System.out.println(s + " ordinal: " + s.ordinal());
+            System.out.println(s + " ordinal:  " + s.ordinal());
         }
 
         Color green = Color.GREEN;

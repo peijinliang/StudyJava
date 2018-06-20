@@ -1,5 +1,8 @@
 package com.java.study.gather;
 
+import java.util.AbstractQueue;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * Crete by Marlon
@@ -10,7 +13,7 @@ package com.java.study.gather;
 public class JavaQueue {
 
     public static void main(String[] args) {
-
+        Queue queue = new LinkedBlockingQueue() ;
 
     }
 

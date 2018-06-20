@@ -15,7 +15,11 @@ import java.util.function.Supplier;
  **/
 public class TestOptional {
 
-    //Optional Api解析
+    /**
+     * Optional Api解析
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         //创建Optional对象
         Optional<String> opt = Optional.empty();

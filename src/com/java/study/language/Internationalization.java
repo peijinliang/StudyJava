@@ -14,13 +14,14 @@ import java.util.ResourceBundle;
 public class Internationalization {
 
     public static void main(String[] args) {
-
         Locale.ENGLISH.toString();
         Locale.CHINA.toString();
 
         //包.文件名  没有后缀  默认在Src文件下
         ResourceBundle res = ResourceBundle.getBundle("language.Message");
-//      System.out.println(res.getString("hello"));
+
+        // System.out.println(res.getString("hello"));
+
         System.out.println(res.getString("welcome"));
 
         Locale zh = new Locale("zh", "CN");

@@ -14,6 +14,7 @@ public class Data {
         System.out.println(this.title + " = " + this.note);
     }
 
+
     public synchronized void set(String title, String note) {
         this.title = title;
         try {

@@ -10,7 +10,7 @@ import java.util.concurrent.*;
  * <p>
  * 定时调度池
  * Executors.newScheduledThreadPool(3); 创建一个具有三个线程大小的定时调度线程池
- *
+ * <p>
  * 线程池的好处就是：允许多个线程按照组的模式，进行程序的处理，在一个逻辑处理非常复杂的情况下，
  * 性能就可以得到很好的提升。
  */
@@ -26,16 +26,17 @@ public class ThreadPool {
             int size = x;
             //普通执行线程操作
 //            newCachedThreadPool.submit(() -> {
-//
+
 //            });
 
             //进行线程调度操作
             /**
              * Runnable command,
-             long initialDelay,
-             long period,
-             TimeUnit unit
+             * long initialDelay,  推迟时间
+             * long period,  时间
+             * TimeUnit unit   时间位
              */
+
             newCachedThreadPool.scheduleAtFixedRate(new Runnable() {
                 @Override
                 public void run() {

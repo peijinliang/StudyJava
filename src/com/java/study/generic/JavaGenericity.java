@@ -11,9 +11,10 @@ import java.util.List;
 
 public class JavaGenericity {
 
-    //java中泛型的本质是参数化类型：也就是说被操作的数据被定义为一个类型
+    /**
+     * java中泛型的本质是参数化类型：也就是说被操作的数据被定义为一个类型
+     */
     public static void main(String[] args) {
-
         Integer[] intArrary = {1, 2, 5, 3, 4, 9, 1};
         Double[] doubleArrary = {1.2, 2.3, 3.3, 4.4, 5.1};
         Character[] charArrary = {'H', 'E', 'L', 'P', 'O'};
@@ -45,7 +46,15 @@ public class JavaGenericity {
     }
 
 
-    //有一些数据类型需要给他制定 一个范围
+    /**
+     * 有一些数据类型需要给他制定 一个范围
+     *
+     * @param x
+     * @param y
+     * @param z
+     * @param <T>
+     * @return
+     */
     public static <T extends Comparable<T>> T maxNumber(T x, T y, T z) {
         T max = x;
         if (y.compareTo(max) > 0) {
@@ -57,7 +66,12 @@ public class JavaGenericity {
         return max;
     }
 
-    //泛型打印数组 printArrary
+    /**
+     * 泛型打印数组 printArrary
+     *
+     * @param inputArray
+     * @param <E>
+     */
     public static <E> void printArrary(E[] inputArray) {
         //输出数组
         for (E element : inputArray) {
@@ -67,17 +81,23 @@ public class JavaGenericity {
         System.out.println();
     }
 
-    // ? 通配符
+    /**
+     * ? 通配符
+     *
+     * @param data
+     */
     public static void getData(List<?> data) {
         System.out.println("data:" + data.get(0));
     }
 
-    //指定通配符的上线
+    /**
+     * 指定通配符的上线
+     *
+     * @param data
+     */
     public static void getUperNumber(List<? extends Number> data) {
         System.out.println("dataNumber:" + data.get(0));
     }
-
-
 
 
 }

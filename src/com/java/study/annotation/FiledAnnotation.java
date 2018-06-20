@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
  * Class Describe
  * ·½·¨×¢½â
  **/
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface FiledAnnotation {

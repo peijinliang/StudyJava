@@ -25,12 +25,12 @@ public class EchoClient {
             System.out.println("请输入要发送的信息");
             if (keyScan.hasNext()) {
                 String str = keyScan.next();
-                netOut.println(str);   //发送给服务器端
-
-                if (netScan.hasNext()) {  //服务器端有回应
+                //发送给服务器端
+                netOut.println(str);
+                //服务器端有回应
+                if (netScan.hasNext()) {
                     System.out.println(netScan.next());
                 }
-
                 if ("byebye".equalsIgnoreCase(str)) {
                     flag = false;
                     break;

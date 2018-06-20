@@ -9,11 +9,12 @@ package com.java.study.java8;
  * 2.面向对象编程的特点： 结构必须十分完整
  * 3.函数式编程 使用 必须接口就允许定义一个接口
  * <p>
- *
  **/
+
 public class Lambda {
 
     //定义接口规范 只能允许有一个方法
+
     @FunctionalInterface
     interface Imessage {
         public void print();
@@ -38,6 +39,7 @@ public class Lambda {
          * 单行语句
          * (参数) -> 执行方法；
          */
+
         /**
          *多行语句
          * 参数) -> {

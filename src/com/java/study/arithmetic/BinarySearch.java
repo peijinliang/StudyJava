@@ -5,7 +5,6 @@ package com.java.study.arithmetic;
  * 前提：二分查找进行排序
  * 逻辑思维训练
  */
-
 public class BinarySearch {
 
 

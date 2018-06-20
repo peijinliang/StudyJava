@@ -14,13 +14,11 @@ package com.java.study.factory;
 
 public class FruitsFactory {
 
-
     private FruitsFactory() {
 
     }
 
     public static Fruits getInstances(String className) {
-
         //第一种写法
 //        if (className.equals("apple")) {
 //            return new Apple();

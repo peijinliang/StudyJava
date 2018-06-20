@@ -19,8 +19,6 @@ public class Message implements AutoCloseable {
     @Override
     public void close() throws Exception {  //关闭的处理操作
         System.out.println("【AutoCloseable】 进行关闭的方法处理!");
-
     }
-
 
 }

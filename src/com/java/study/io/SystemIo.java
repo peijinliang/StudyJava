@@ -11,12 +11,12 @@ import java.io.*;
 public class SystemIo {
 
     public static void main(String[] args) throws IOException {
-
-//        System.out.println();
+ //        System.out.println();
 //        System.err.println();
 //        OutputStream out = System.out; //子类实例向上转型
 //        out.write("世界和平".getBytes());
 //        out.close();
+
 
         InputStream input = System.in;  //实例化
         ByteArrayOutputStream bos = new ByteArrayOutputStream();

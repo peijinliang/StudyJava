@@ -6,8 +6,10 @@ package com.java.study.factory;
  * Class Describe
  **/
 public class MessageImpl implements Message {
+
     @Override
     public void print() {
         System.out.println("打印 一些 东西");
     }
+
 }

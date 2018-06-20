@@ -11,6 +11,7 @@ import java.io.File;
  * 2、 判断目标文件的父目录是否存在，如果不存在应该创建
  * 3、需要进行文件的copy操作
  **/
+
 public class CopyUtil {
 
     private CopyUtil() {  //构造方法私有化
@@ -34,8 +35,6 @@ public class CopyUtil {
      * @param path 要操作的文件路径，通过此路径取得父路径
      */
     public static void createParentDir(String path) {
-
-
 
     }
 

@@ -16,4 +16,6 @@ public class Message {
     public void setNote(String note) {
         this.note = note;
     }
+
+
 }

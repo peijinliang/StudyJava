@@ -4,7 +4,7 @@ package com.java.study.generic;
  * Crete by Marlon
  * Create Date: 2017/11/10
  * Class Describe 泛型方法
- *
+ * <p>
  * 为什么要使用泛型方法呢？
  * 1.泛型在实例化的时候要指明类型，如果想换一种类型，需要写很多Code 比较麻烦，
  * 2.指明类型，更加灵活

@@ -30,6 +30,7 @@ public class CharacterStream {
 
         String filename = "C:\\Users\\Jin\\Desktop\\zeb4.txt";
         String apkname = "C:\\Users\\Jin\\Desktop\\read.apk";
+
         startBufferWriter(filename);
         startBufferReader(filename);
 
@@ -42,6 +43,7 @@ public class CharacterStream {
     }
 
     public static void startStringReader() {
+
         String text = "这是一个 StringReader 类";
         StringReader stringReader = new StringReader(text);
         try {
@@ -53,18 +55,20 @@ public class CharacterStream {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     public static void startStringWriter() {
+
         try {
             StringWriter stringWriter = new StringWriter();
             stringWriter.write("我是 一个");
             stringWriter.append("Java 大神级别的人物");
             stringWriter.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -74,6 +78,7 @@ public class CharacterStream {
      * @param fileName
      */
     public static void startBufferWriter(String fileName) {
+
         try {
             BufferedWriter bWrite = new BufferedWriter(new FileWriter(fileName));
             bWrite.write("hell,io");
@@ -85,6 +90,7 @@ public class CharacterStream {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -92,6 +98,7 @@ public class CharacterStream {
      * BufferedReader 一行一行的读取文件速度非常快
      */
     public static void startBufferReader(String fileName) {
+
         try {
             BufferedReader read = new BufferedReader(new FileReader(fileName));
             String line = read.readLine();
@@ -103,6 +110,7 @@ public class CharacterStream {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -110,6 +118,7 @@ public class CharacterStream {
      * @param fileName
      */
     public static void startFileReader(String fileName) {
+
         try {
             FileReader read = new FileReader(fileName);
             int len = 0;
@@ -120,6 +129,7 @@ public class CharacterStream {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -146,7 +156,9 @@ public class CharacterStream {
             File file = new File("Hello1.txt");
             // 创建文件
             file.createNewFile();
-            // creates a FileWriter Object
+
+            //  creates a FileWriter Object
+
             FileWriter writer = new FileWriter(file);
             // 向文件写入内容
             writer.write("This\n is\n an\n example\n");
@@ -156,10 +168,14 @@ public class CharacterStream {
             // 创建 FileReader 对象
             FileReader fr = new FileReader(file);
             char[] a = new char[50];
-            fr.read(a); // 读取数组中的内容
-            for (char c : a)
-                System.out.print(c); // 一个一个打印字符
+            // 读取数组中的内容
+            fr.read(a);
+            for (char c : a) {
+                // 一个一个打印字符
+                System.out.print(c);
+            }
             fr.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -18,7 +18,8 @@ public class EchoServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(8888);
-        Socket client = server.accept();  //等待链接  实现多线程的操作
+        //等待链接  实现多线程的操作
+        Socket client = server.accept();
         new MyThread(client).run();
 
 //        ServerSocket server = new ServerSocket(8888);

@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 public class Functions {
 
     public static void main(String[] args) {
-
         //参数为Integer  返回值为String
         Function<Integer, String> fun = String::valueOf;
         System.out.println(fun.apply(1000));
@@ -36,7 +35,6 @@ public class Functions {
         //断言型函数式接口
         Predicate<String> predicate = "##Hello"::startsWith;
         System.out.println(predicate.test("#"));
-
 
 
         BiFunction<String, List<Article>, List<Article>> byAuthor =
@@ -70,7 +68,6 @@ public class Functions {
                 byTag.andThen(newest);
 
     }
-
 
 
 }

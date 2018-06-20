@@ -9,14 +9,21 @@ import java.io.*;
  * Class Describe
  * File 文件流 进行学习
  **/
+
 public class FileStream {
 
-    //设计一个小的案例  创建一个输出流，输出到文件 helloworld.txt里边去,然后在从里边读入打印
+    /**
+     * 设计一个小的案例  创建一个输出流，输出到文件 helloworld.txt里边去,然后在从里边读入打印
+     * @param args
+     */
     public static void main(String[] args) {
         mainfileIoTest();
     }
 
-    //文件输入流的两种输入方式
+
+    /**
+     * 文件输入流的两种输入方式
+     */
     public static void studyFileInputStream() {
         try {
             File file = new File("C:\\Users\\Jin\\Desktop\\zeb4.txt");
@@ -32,7 +39,9 @@ public class FileStream {
         }
     }
 
-    //文件输出流的两种使用方式
+    /**
+     * 文件输出流的两种使用方式
+     */
     public static void studyFileOutputStream() {
         try {
             File file = new File("C:/java/hello");

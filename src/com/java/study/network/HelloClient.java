@@ -24,7 +24,6 @@ public class HelloClient {
         }
         //3¡¢¿Í»§¶Ë½áÊø
         client.close();
-
     }
 
 

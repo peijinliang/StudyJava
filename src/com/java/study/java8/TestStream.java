@@ -22,12 +22,14 @@ public class TestStream {
         users.add(new User("小明", "1", 10));
         users.add(new User("小红", "2", 20));
         users.add(new User("小花", "3", 30));
+
 //        startStream(users);
 //        testcollect();
 //        testMap();
 //        testMaxMin();
 //        testReduce();
 //        testparallel();
+        
         testSorted();
     }
 
@@ -126,8 +128,7 @@ public class TestStream {
      * 总结：数据规模比较大 或者 数据的处理时间比较长 的时候才能体现出有事，所以并不是每个地方都需要让数据并行化，应该具体问题具体分析
      */
     public static void testparallel() {
-        int sunSize = Stream.of("Apple", "Banana", "Orange", "Pear")
-                              .parallel().map(s -> s.length()).reduce(Integer::sum).get();
+        int sunSize = Stream.of("Apple", "Banana", "Orange", "Pear").parallel().map(s -> s.length()).reduce(Integer::sum).get();
         System.out.println("输入所有字母的总长度" + sunSize);
     }
 

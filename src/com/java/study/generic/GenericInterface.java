@@ -5,6 +5,7 @@ package com.java.study.generic;
  * Create Date: 2017/11/10
  * Class Describe ·ºÐÍ½Ó¿Ú
  **/
+
 public interface GenericInterface<T> {
 
     public T next();

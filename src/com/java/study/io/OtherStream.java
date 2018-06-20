@@ -13,7 +13,6 @@ import java.io.*;
 
 public class OtherStream {
 
-
     public static void main(String[] args) {
         String inputname = "C:\\Users\\Jin\\Desktop\\zeb4.txt";
         String outname = "C:\\Users\\Jin\\Desktop\\zeb5.txt";
@@ -31,7 +30,6 @@ public class OtherStream {
 
     /**
      * 写二进制流
-     *
      * @param fileName
      */
     public static void readDataOutputStream(String fileName) {

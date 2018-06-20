@@ -21,5 +21,6 @@ public class CreateArrayBuffer
     System.out.println( (char)buffer.get() );
     System.out.println( (char)buffer.get() );
     System.out.println( (char)buffer.get() );
+
   }
 }

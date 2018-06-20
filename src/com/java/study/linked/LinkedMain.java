@@ -5,6 +5,7 @@ package com.java.study.linked;
  * Create Date: 2018/2/3
  * Class Describe
  **/
+
 public class LinkedMain {
 
     public static void main(String[] args) {
@@ -20,14 +21,14 @@ public class LinkedMain {
         n1.setNext(n2);
         n2.setNext(n3);
 
-
         //采用递归操作
         print(root);
     }
 
 
     public static void print(Node node) {
-        if (node != null) {  //表示当前存在的节点
+        //表示当前存在的节点
+        if (node != null) {
             System.out.println(node.getData());
         }
     }

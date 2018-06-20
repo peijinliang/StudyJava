@@ -28,6 +28,7 @@ public class StudyStorm {
     public static void main(String[] args) {
 
         List<String> all = new ArrayList<>();
+
         all.add("1¡¢java");
         all.add("2¡¢php");
         all.add("3¡¢C#");

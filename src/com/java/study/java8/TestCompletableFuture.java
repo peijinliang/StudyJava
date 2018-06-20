@@ -34,11 +34,11 @@ public class TestCompletableFuture {
         Future<Void> futureA = exector.submit(() -> work("A1"));
         Future<Void> futureB = exector.submit(() -> work("B1"));
         while (true) {
-
             try {
                 futureA.get(1, TimeUnit.SECONDS);
                 break;
             } catch (TimeoutException e) {
+
             }
 
             try {
@@ -72,9 +72,6 @@ public class TestCompletableFuture {
         System.out.println(name + " ends at" + LocalTime.now());
         return null;
     }
-
-
-
 
 
 }
