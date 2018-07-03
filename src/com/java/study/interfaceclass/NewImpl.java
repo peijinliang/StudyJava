@@ -7,6 +7,7 @@ import java.io.InputStream;
  * Create Date: 2018/3/20
  * Class Describe
  **/
+
 public class NewImpl implements INews {
 
     @Override

@@ -11,7 +11,6 @@ package com.java.study.factory;
 
 public class Factory {
 
-
     private Factory() {
 
     }

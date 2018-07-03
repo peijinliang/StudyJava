@@ -17,6 +17,7 @@ public class T_Clone {
     public static void main(String[] args) throws CloneNotSupportedException {
 
         Person person = new Person("what fuck ?", 20);
+
         Person perA = (Person) person.clone();
         perA.setAge(30);
         System.out.println("person:" + person.toString());

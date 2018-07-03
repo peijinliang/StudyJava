@@ -22,6 +22,7 @@ import java.util.stream.IntStream;
  * 2.闭包
  * 3.方法引用
  **/
+
 public class LambdaExpression {
 
     public static void main(String args[]) {
@@ -33,15 +34,19 @@ public class LambdaExpression {
      * java 函数式编程的几种形式
      */
     public static void testdescrStyle() {
+
         //空括号表示没有任何参数
         Runnable noArguments = () -> System.out.println("Hello World");
+
         //仅仅包含一个参数，可以省却括号
         ActionListener oneArgument = (event) -> System.out.println("button clicked");
+
         //主体可以是{}包含起来的代码块
         Runnable multiStatement = () -> {
             System.out.print("Hello");
             System.out.println(" World");
         };
+
         //表示可以有多个参数
         BinaryOperator<Long> add = (x, y) -> x + y;
         BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
@@ -54,7 +59,10 @@ public class LambdaExpression {
     public static void testclosure() {
         Button button = new Button();
         final String name = "what's your name?";
+
         button.addActionListener(new ActionListener() {
+
+            @Override
             public void actionPerformed(ActionEvent event) {
                 System.out.println("hi " + name);
             }
@@ -65,7 +73,6 @@ public class LambdaExpression {
             System.out.println("hi " + names);
         };
     }
-
 
     /**
      * 方法引用的唯一用途是支持Lambda的简写
@@ -89,7 +96,6 @@ public class LambdaExpression {
         User s3 = c2.apply(100);
 
         //静态方法引用  Class::staticMethodName
-
         List<Integer> integers = Arrays.asList(1, 3, 4, 5, 19);
         Optional<Integer> max = integers.stream().reduce(Math::max);
 
@@ -110,7 +116,6 @@ public class LambdaExpression {
                                          .collect(Collectors.toList());
         System.out.println(sortedAlt);
 
-
         //引用构造函数 - Class::new
         List<Integer> integers2 = IntStream.range(1, 100)
                                           .boxed()
@@ -119,7 +124,6 @@ public class LambdaExpression {
         Optional<Integer> max2 = integers2.stream().reduce(Math::max);
 
         max2.ifPresent(System.out::println);
-
     }
 
 

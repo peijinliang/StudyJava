@@ -6,6 +6,7 @@ import java.io.File;
  * Crete by Marlon
  * Create Date: 2018/3/14
  * Class Describe
+ *
  * 建立一个专门具有文件copy功能的处理类，该类具备如下功能：
  * 1、需要判断拷贝的源文件是否存在
  * 2、 判断目标文件的父目录是否存在，如果不存在应该创建
@@ -28,7 +29,6 @@ public class CopyUtil {
         return new File(path).exists();
     }
 
-
     /**
      * 根据传入的路径判断父路径是否存在，如果不存在则创建
      *
@@ -37,6 +37,5 @@ public class CopyUtil {
     public static void createParentDir(String path) {
 
     }
-
 
 }

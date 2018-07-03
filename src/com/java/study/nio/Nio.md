@@ -17,12 +17,10 @@ java Nio 概念？
 NIO 工具包提出了基于Buffer（缓冲区）、Channel（通道）、Selector（选择器）的新模式；
 Selector（选择器）、可选择的Channel（通道）和 SelectionKey（选择键）配合起来使用，可以实现并发的非阻塞型I/O 能力
 
-
 Buffer抽象类 (缓冲类)
 1)七个子类 ByteBuffer、CharBuffer、DoubleBuffer、FloatBuffer、IntBuffer、LongBuffer和ShortBuffer。
 2）每一个Buffer对象相当于一个数据容器，可以把它看做内存中的一个大的数组，用来存储基本数据类型的数据。
 3）Buffer的核心是一块内存区域，可以对其执行内存有关的操作，利用操作系统的特性和能力提高和改善JAVA传统NIO的性能。
-
 
 Channel (通道)
 1）是(Buffer)缓冲器和I/O 服务之间的通道，
@@ -30,13 +28,9 @@ Channel (通道)
 
 
 Selector（选择器）和SelectionKey（选择键）
-1)Buffer 是数据的容器对象；各类Channel 实现在各类Buffer 与各类I/O 服务间传输数据。
+1)Buffer 是数据的容器对象;各类Channel 实现在各类Buffer 与各类I/O 服务间传输数据。
 Selector 是实现并发型非阻塞I/O 的核心.
 2)
-
-
-
-
 
 
 

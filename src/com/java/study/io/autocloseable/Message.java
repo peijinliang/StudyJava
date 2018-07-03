@@ -5,6 +5,7 @@ package com.java.study.io.autocloseable;
  * Create Date: 2018/3/14
  * Class Describe
  **/
+
 public class Message implements AutoCloseable {
 
     public Message() {

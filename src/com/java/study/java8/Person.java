@@ -1,6 +1,7 @@
 package com.java.study.java8;
 
 public class Person {
+
     private String name;
     private int age;
 
@@ -32,4 +33,5 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
+
 }

@@ -20,7 +20,6 @@ public class FileStream {
         mainfileIoTest();
     }
 
-
     /**
      * 文件输入流的两种输入方式
      */

@@ -9,6 +9,7 @@ package com.java.study.linked;
 public class LinkedMain {
 
     public static void main(String[] args) {
+
         //存放几个节点
         Node root = new Node("火车头");
 

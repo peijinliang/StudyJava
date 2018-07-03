@@ -43,6 +43,7 @@ public class MethodReference {
         UpperCase<String> upper = new UpperCase<String>() {
             @Override
             public String zhuanhuan() {
+
                 return "Hello".toUpperCase();
             }
         };
@@ -53,7 +54,8 @@ public class MethodReference {
         UpperCase<String> upperCase = "Hello"::toUpperCase;
         System.out.println(upperCase.zhuanhuan());
 
-        CompareTo<Integer, String> compareTo = String::compareTo; //方法引用
+        //方法引用
+        CompareTo<Integer, String> compareTo = String::compareTo;
         System.out.println(compareTo.comptTo("H", "A"));
 
         PersonUtil<Person, String, Integer> personUtil = Person::new;

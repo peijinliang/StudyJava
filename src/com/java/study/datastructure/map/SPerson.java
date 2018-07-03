@@ -22,7 +22,11 @@ public class SPerson implements Comparable<SPerson> {
         this.name = name;
     }
 
-    //快捷键选择属性自动生成
+    /**
+     * 快捷键选择属性自动生成
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,7 +50,11 @@ public class SPerson implements Comparable<SPerson> {
                        '}';
     }
 
-    //重写该方法进行比较
+    /**
+     * 重写该方法进行比较
+     * @param o
+     * @return
+     */
     @Override
     public int compareTo(SPerson o) {
         return this.name.compareTo(o.name);

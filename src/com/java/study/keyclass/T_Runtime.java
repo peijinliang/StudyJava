@@ -40,6 +40,7 @@ public class T_Runtime {
 
         runtime.gc(); //调用JVM 垃圾回收机制
         System.out.println("调用垃圾回收机制：------------------------");
+
         System.out.println("3.MAX = " + byteTom(runtime.maxMemory()));
         System.out.println("3.TOTAL = " + byteTom(runtime.totalMemory()));
         System.out.println("3.FREE = " + byteTom(runtime.freeMemory()));

@@ -27,6 +27,7 @@ public class JavaQueue {
         System.out.println(queue.poll());
         System.out.println(queue.poll());
         System.out.println(queue.poll()); //弹完了就是 NULL
+
     }
 
 }

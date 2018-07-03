@@ -16,7 +16,6 @@ public class T_Date {
 
         long num = System.currentTimeMillis();
         System.out.println(new Date(num));
-
     }
 
 }

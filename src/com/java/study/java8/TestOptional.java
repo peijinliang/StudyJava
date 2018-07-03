@@ -21,6 +21,7 @@ public class TestOptional {
      * @param args
      */
     public static void main(String[] args) {
+
         //创建Optional对象
         Optional<String> opt = Optional.empty();
 
@@ -58,7 +59,7 @@ public class TestOptional {
             }
         }
 
-        //filter(Predicate<? super T> predicate)
+ //     filter(Predicate<? super T> predicate)
         Predicate<String> predicate = (x) -> x.length() > 0;
         opt2.filter(predicate);
     }

@@ -18,6 +18,7 @@ import java.util.ResourceBundle;
  * 读取属性： load(InputStream inStream)
  * 作用：用来保存信息
  **/
+
 public class JavaProperties {
 
 
@@ -29,6 +30,7 @@ public class JavaProperties {
         properties.getProperty("key", "value");
 
         //保存属性
+
         try {
             properties.store(new FileOutputStream(new File("E:" + File.separator + "area.properties")), "Area Info");
         } catch (IOException e) {
@@ -37,6 +39,7 @@ public class JavaProperties {
 
         //读取属性
         Properties properties1 = new Properties();
+
         try {
             properties1.load(new FileInputStream(new File("E:" + File.separator + "area.properties")));
             System.out.println("------------------------------" + properties.getProperty("key"));
@@ -46,17 +49,17 @@ public class JavaProperties {
 
         //加载  Resource 目录下的文件
         ResourceBundle resourceBundle = new ResourceBundle() {
+
             @Override
             protected Object handleGetObject(String key) {
                 return null;
             }
-
             @Override
             public Enumeration<String> getKeys() {
                 return null;
             }
-        };
 
+        };
 
     }
 

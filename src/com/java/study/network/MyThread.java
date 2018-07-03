@@ -16,18 +16,17 @@ public class MyThread implements Runnable {
 
     private Socket client;
 
-
     public MyThread(Socket socket) {
         this.client = socket;
     }
-
 
     @Override
     public void run() {
         try {
 
-//            ServerSocket server = new ServerSocket(8888);
-//            Socket client = server.accept();  //等待链接
+//          ServerSocket server = new ServerSocket(8888);
+//          Socket client = server.accept();  //等待链接
+
             Scanner scanner = new Scanner(client.getInputStream());  //接受客户度的输入
             scanner.useDelimiter("\n");
 
@@ -43,6 +42,7 @@ public class MyThread implements Runnable {
                     out.println("ECHO:" + str);
                 }
             }
+
             out.close();
             scanner.close();
             client.close();

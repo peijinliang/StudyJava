@@ -57,7 +57,7 @@ public class TestStream {
      */
     public static void testcollect() {
         List<String> collected = Stream.of("a", "b", "c").collect(toList());
-//        assertEquals(Arrays.asList("a", "b", "c"), collected);
+//      assertEquals(Arrays.asList("a", "b", "c"), collected);
     }
 
     /**
@@ -66,7 +66,7 @@ public class TestStream {
      */
     public static void testMap() {
         List<String> collected = Stream.of("a", "b", "c").map(string -> string.toUpperCase()).collect(toList());
-//        assertEquals(Arrays.asList("A", "B", "C"), collected);
+//      assertEquals(Arrays.asList("A", "B", "C"), collected);
     }
 
 

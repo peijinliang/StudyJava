@@ -24,10 +24,12 @@ public class T_Random {
 
     //随机整数
     public static void IntgerRandom() {
+
         Random random = new Random();
         for (int i = 0; i < 10; i++) { //100表示最大值  1-99
             System.out.println(random.nextInt(100));
         }
+
     }
 
 

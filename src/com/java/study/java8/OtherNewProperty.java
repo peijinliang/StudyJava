@@ -16,5 +16,4 @@ public class OtherNewProperty {
 //        java.util.Base64
     }
 
-
 }

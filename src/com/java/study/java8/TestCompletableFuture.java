@@ -30,9 +30,11 @@ public class TestCompletableFuture {
     }
 
     public static void userFuture() throws InterruptedException, ExecutionException {
+
         ExecutorService exector = Executors.newFixedThreadPool(3);
         Future<Void> futureA = exector.submit(() -> work("A1"));
         Future<Void> futureB = exector.submit(() -> work("B1"));
+
         while (true) {
             try {
                 futureA.get(1, TimeUnit.SECONDS);
@@ -40,7 +42,6 @@ public class TestCompletableFuture {
             } catch (TimeoutException e) {
 
             }
-
             try {
                 futureB.get(1, TimeUnit.SECONDS);
                 break;
@@ -50,19 +51,21 @@ public class TestCompletableFuture {
         }
         exector.submit(() -> work("C1")).get();
         exector.shutdown();
-
     }
 
 
     public static void useCompletableFuture() throws InterruptedException, ExecutionException {
+
         System.out.println("--------------useCompletableFuture----------");
         CompletableFuture<Void> futureA = CompletableFuture.runAsync(() -> work("A2"));
         CompletableFuture<Void> futureB = CompletableFuture.runAsync(() -> work("B2"));
         futureA.runAfterEither(futureB, () -> work("C2")).get();
+
     }
 
 
     public static Void work(String name) {
+
         System.out.println(name + " starts at" + LocalTime.now());
         try {
             TimeUnit.SECONDS.sleep(random.nextInt(10));
@@ -70,6 +73,7 @@ public class TestCompletableFuture {
             e.printStackTrace();
         }
         System.out.println(name + " ends at" + LocalTime.now());
+
         return null;
     }
 

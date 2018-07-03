@@ -10,15 +10,16 @@ import java.io.*;
 
 public class StudyFile {
 
-
     public static void main(String[] args) {
+
         String filename = "C:\\Users\\Jin\\Desktop\\read.apk";
         String pathname = "C:\\Users\\Jin\\Desktop";
+
         studyFileClass(filename);
         studyFilePath(pathname);
         operationFile(pathname);
-    }
 
+    }
 
     /**
      * 通过api简单的学习一下File类
@@ -27,7 +28,9 @@ public class StudyFile {
      */
     public static void studyFileClass(String filename) {
         File file = new File(filename);
+
         try {
+
             System.out.println("文件名称-----------" + file.getName());
             System.out.println("文件的绝对路径-----------" + file.getAbsoluteFile());
             System.out.println("父类路径-----------" + file.getParent());
@@ -43,17 +46,20 @@ public class StudyFile {
             System.out.println("文件的长度------" + file.length());
             System.out.println("如果文件不存在创建一个新的文件--------" + file.createNewFile());
             System.out.println("删除该文件或目录--------" + file.delete());
-//          System.out.println("在虚拟机终止时，请求删除此抽象路径名表示的文件或目录--------" + file.deleteOnExit());
+
+            //System.out.println("在虚拟机终止时，请求删除此抽象路径名表示的文件或目录--------" + file.deleteOnExit());
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
-
     /**
-     * 有一些基本的api 记录一下：
+     * 有一些基本的api 记录一下
      */
     public static void studyFilePath(String dirname) {
+
         File f1 = new File(dirname);
         if (f1.isDirectory()) {
             System.out.println("Directory of " + dirname);
@@ -69,8 +75,8 @@ public class StudyFile {
         } else {
             System.out.println(dirname + " is not a directory");
         }
-    }
 
+    }
 
     public static void operationFile(String filename) {
         File file = new File(filename);

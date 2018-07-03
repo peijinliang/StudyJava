@@ -9,8 +9,8 @@ import java.util.stream.Stream;
  * Create Date: 2018/3/6
  * Class Describe
  * 大数据兴起的时候
- * Map:     处理数据
- * Reduce:  分析数据
+ * Map:    处理数据
+ * Reduce: 分析数据
  * <p>
  * <p>
  * java.util.Collection 和 java.util.Collections区别
@@ -48,6 +48,7 @@ public class StudyStorm {
 //        if (strings.hasNext()) {
 //            System.out.println(strings.next());
 //        }
+
 
         //用一些简单的代码 完成一些比较复杂的业务逻辑操作
         Stream<String> stringStream = all.stream();

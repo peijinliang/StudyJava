@@ -13,6 +13,7 @@ import java.util.Stack;
  * 入栈  push
  * 出栈  pop
  **/
+
 public class JavaStack {
 
     public static void main(String[] args) {
@@ -28,9 +29,10 @@ public class JavaStack {
         System.out.println(stacks.pop());
         System.out.println(stacks.pop());
         System.out.println(stacks.pop()); //出栈异常 JavaStack.java:31
-        //深入JVM
 
+        //深入JVM
         stacks.push("");
+
     }
 
 

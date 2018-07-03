@@ -13,14 +13,17 @@ import java.util.Arrays;
 public class T_Comparable {
 
     public static void main(String[] args) {
+
         Person person[] = new Person[]{
                 new Person("张三", 10),
                 new Person("李四", 30),
                 new Person("王五", 21),
                 new Person("赵六", 11)
         };
+
         Arrays.sort(person);
         System.out.println(Arrays.toString(person));
+
     }
 
 

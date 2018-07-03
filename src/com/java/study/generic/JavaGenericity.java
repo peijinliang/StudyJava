@@ -15,6 +15,7 @@ public class JavaGenericity {
      * java中泛型的本质是参数化类型：也就是说被操作的数据被定义为一个类型
      */
     public static void main(String[] args) {
+
         Integer[] intArrary = {1, 2, 5, 3, 4, 9, 1};
         Double[] doubleArrary = {1.2, 2.3, 3.3, 4.4, 5.1};
         Character[] charArrary = {'H', 'E', 'L', 'P', 'O'};
@@ -43,6 +44,7 @@ public class JavaGenericity {
         getData(name);
         getData(age);
         getUperNumber(number);
+
     }
 
 

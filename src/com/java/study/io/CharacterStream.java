@@ -7,17 +7,16 @@ import java.io.*;
  * Create Date: 2017/11/9
  * Class Describe
  * <p>
- * <p>
  * JAVA 字符流进行操作
  * * FileReader类从InputStreamReader类继承而来
  * 创建FileReader方法
  * FileReader(File file)
  * FileReader(FileDescriptor fd)
  * FileReader(String fileName)
- * <p>
- * <p>
  * FileWriter
+ * <p>
  * 该类按字符向流中写入数据
+ * <p>
  * FileWriter(File file)
  * FileWriter(File file, boolean append)
  * FileWriter(FileDescriptor fd)
@@ -40,18 +39,20 @@ public class CharacterStream {
         startFileWriter(filename);
         startFileReader(filename);
         studyFileReader();
+
     }
 
     public static void startStringReader() {
-
         String text = "这是一个 StringReader 类";
         StringReader stringReader = new StringReader(text);
+
         try {
             int len = stringReader.read();
             while (len != -1) {
                 System.out.println("line:" + len);
             }
             stringReader.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -71,7 +72,6 @@ public class CharacterStream {
 
     }
 
-
     /**
      * 处理内容较多的数据是，用BufferedWriter更高效
      *
@@ -80,6 +80,7 @@ public class CharacterStream {
     public static void startBufferWriter(String fileName) {
 
         try {
+
             BufferedWriter bWrite = new BufferedWriter(new FileWriter(fileName));
             bWrite.write("hell,io");
             bWrite.newLine();
@@ -139,27 +140,33 @@ public class CharacterStream {
      * @param fileName
      */
     public static void startFileWriter(String fileName) {
+
         FileWriter write = null;
         try {
+
             write = new FileWriter(fileName);
             write.write("hell,io\n");
             write.write("welcome to study\n");
             write.write("加油，谢谢！");
             write.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
+
     public static void studyFileReader() {
+
         try {
             File file = new File("Hello1.txt");
             // 创建文件
             file.createNewFile();
 
-            //  creates a FileWriter Object
-
+            //creates a FileWriter Object
             FileWriter writer = new FileWriter(file);
+
             // 向文件写入内容
             writer.write("This\n is\n an\n example\n");
             writer.flush();
@@ -167,7 +174,9 @@ public class CharacterStream {
 
             // 创建 FileReader 对象
             FileReader fr = new FileReader(file);
+
             char[] a = new char[50];
+
             // 读取数组中的内容
             fr.read(a);
             for (char c : a) {

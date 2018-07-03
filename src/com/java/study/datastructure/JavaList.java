@@ -26,17 +26,18 @@ import java.util.*;
 public class JavaList {
 
     public static void main(String[] args) {
+
 //        list.contains();
 //        list.iterator();
 
-        //  开发建议传入initialCapacity 初始化大小
+        //开发建议传入initialCapacity 初始化大小
+
         ArrayList<String> list = new ArrayList<>(5);
 
         list.add("what fuck?");
         list.add("what fuck?");
         System.out.println(list.toString());
-
-
+        
         //不允许重复  没有对Coolection J进行扩充
         Set<String> hashSet = new HashSet<String>();  //无序存储
         hashSet.add("Hello");
@@ -52,7 +53,6 @@ public class JavaList {
         treeSet.add("Hello");
         treeSet.add("Marlon");
         System.out.println(treeSet.toString());
-
 
         Set<Person> personSet = new TreeSet<>();    //有序存储   TreeSet 是需要Comparable 实现
         personSet.add(new Person("夏红", 1));

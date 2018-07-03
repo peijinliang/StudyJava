@@ -6,5 +6,7 @@ package com.java.study.factory;
  * Class Describe
  **/
 public interface Message {
+
     public void print();
+    
 }

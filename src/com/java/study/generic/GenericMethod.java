@@ -21,7 +21,7 @@ public class GenericMethod {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    public <T> T getObject(Class<T> clazz) throws IllegalAccessException, InstantiationException {
+    public static <T> T getObject(Class<T> clazz) throws IllegalAccessException, InstantiationException {
         T object = clazz.newInstance();
         return object;
     }
@@ -30,9 +30,8 @@ public class GenericMethod {
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         GenericMethod genericMethod = new GenericMethod();
         //java·ºÐÍ
-        User user = (User) genericMethod.getObject(Class.forName("com.java.study.generic.User"));
+        User user = (User) getObject(Class.forName("com.java.study.generic.User"));
         System.out.println(user);
     }
-
 
 }

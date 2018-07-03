@@ -25,15 +25,20 @@ public class GenericMore<T, K> extends Generic<T> {
         return value;
     }
 
+    public <T> void printMsg(T... args) {
+        for (T t : args) {
+            System.out.println("∑∫–Õ≤‚ ‘£∫t is " + t);
+        }
+    }
+
     public static void main(String[] args) {
         GenericMore m = new GenericMore("name");
         String value = (String) m.getValue(new Generic("key"));
         System.out.println(value);
     }
 
-    public <T> void printMsg(T... args) {
-        for (T t : args) {
-            System.out.println("∑∫–Õ≤‚ ‘£∫t is " + t);
-        }
-    }
+
+
+
+
 }

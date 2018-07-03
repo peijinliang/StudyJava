@@ -5,13 +5,18 @@ package com.java.study.enumeration;
  * Create Date: 2017/11/10
  * Class Describe
  **/
+
 public class StateMachine {
+
     enum Signal {
         RED, GREEN,YELLOW;
     }
 
-
-    //枚举类型的状态机 可读性比较好
+    /**
+     * 枚举类型的状态机 可读性比较好
+     * @param signal
+     * @return
+     */
     private String getTrafficInstruct(Signal signal) {
         String instruct = "信号灯故障";
         switch (signal) {

@@ -11,12 +11,11 @@ import java.io.*;
 public class SystemIo {
 
     public static void main(String[] args) throws IOException {
- //        System.out.println();
+ //       System.out.println();
 //        System.err.println();
 //        OutputStream out = System.out; //子类实例向上转型
 //        out.write("世界和平".getBytes());
 //        out.close();
-
 
         InputStream input = System.in;  //实例化
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -27,7 +26,7 @@ public class SystemIo {
 
         int temp = 0;
 
-        //换行不等于负1
+//        换行不等于负1
 //        while ((temp = input.read(data)) != -1) {   //
         //用户自己进行换行处理，因为换行并不等于文件结束
 //            bos.write(data, 0, temp); //保存在内存输出流

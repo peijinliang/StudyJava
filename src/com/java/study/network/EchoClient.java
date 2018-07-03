@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class EchoClient {
 
     public static void main(String[] args) throws IOException {
+
         Socket client = new Socket("localhost", 8888);
         Scanner keyScan = new Scanner(System.in);
         keyScan.useDelimiter("\n");

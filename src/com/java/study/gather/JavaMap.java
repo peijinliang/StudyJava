@@ -12,6 +12,7 @@ import java.util.function.BiConsumer;
 public class JavaMap {
 
     public static void main(String[] args) {
+
         HashMap<String, String> hashMap = new HashMap<>();
 
         hashMap.put("1", "Ok1");
@@ -29,6 +30,7 @@ public class JavaMap {
 
             }
         });
+
         // Strom 数据流编程 java 金融公司
 
     }

@@ -6,39 +6,47 @@ import java.io.*;
  * Crete by Marlon
  * Create Date: 11/22/2017
  * Class Describe
- * <p>
+ *
  * 二进制数据流DataOutputStream、DataInputStream
  * ByteArrayInputStream 和 ByteArrayOutputStream的使用
+ *
  **/
 
 public class OtherStream {
 
     public static void main(String[] args) {
+
         String inputname = "C:\\Users\\Jin\\Desktop\\zeb4.txt";
         String outname = "C:\\Users\\Jin\\Desktop\\zeb5.txt";
         String apkname = "C:\\Users\\Jin\\Desktop\\read.apk";
+
 //      readDataOutputStream(inputname);
 //      writeDataInputStream(inputname);
+
         operationData(inputname, outname);
+
         try {
             startByteArray();
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
 
+    }
 
     /**
      * 写二进制流
      * @param fileName
      */
     public static void readDataOutputStream(String fileName) {
+
         try {
+
             DataOutputStream out = new DataOutputStream(new FileOutputStream(fileName));
             out.writeInt(1);
             out.writeDouble(11.20);
             out.writeUTF("test");
             out.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -66,7 +74,9 @@ public class OtherStream {
      */
     public static void operationData(String inputname, String outname) {
         DataInputStream d = null;
+
         try {
+
             d = new DataInputStream(new FileInputStream(inputname));
             DataOutputStream out = new DataOutputStream(new FileOutputStream(outname));
             String count;
@@ -104,7 +114,8 @@ public class OtherStream {
         for (int x = 0; x < b.length; x++) {
             System.out.print((char) b[x] + "  ");
         }
-        System.out.println("    ");
+        System.out.println(" -----------------------  ");
+
         int c;
 
         ByteArrayInputStream input = new ByteArrayInputStream(b);
